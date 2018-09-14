@@ -1,4 +1,5 @@
-# First-Class Functions Practice Lab
+
+l# First-Class Functions Practice Lab
 
 ## Objectives
 1. Practice using forEach
