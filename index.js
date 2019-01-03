@@ -11,10 +11,20 @@ const logDriversByHometown = function (drivers, hometown) {
     }
      })
       }
-      const driversByRevenue = function (drivers, Revenue) {
-  drivers.forEach(function (driver) {
-    return driver.sort(driver.Revenue) 
-      console.log(driver.name);
-    
-  });
+      var driversByRevenue = function (driver) {
+  return driver.slice().sort(function (firstDriver, secondDriver) {
+    return firstDriver.revenue - secondDriver.revenue; });
+				};
+				var driversByName = function (driver) {
+  return driver.slice().sort(function (firstDriver, secondDriver) {
+    return firstDriver.name.localeCompare(secondDriver.name); });
+				};
+				
+		var totalRevenue = function (driver) {
+  return driver.reduce(function (sumation, thedriver) {
+    return thedriver. revenue  + sumation},0);
 };
+
+var averageRevenue = function (driver) {
+  return totalRevenue(driver)/driver.length;};
+				
